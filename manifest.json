@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Code it",
+    "description": "This extension will code/decode any text",
+    "version": "1.0",
+ 
+    "browser_action": {
+        "default_icon": "32x32.png",
+        "default_popup": "popup.html"
+    },
+
+    "icons": {
+      "32": "32x32.png"
+    },
+
+    "permissions": [
+        "activeTab",
+	"contextMenus"
+    ],
+
+    "content_scripts": [
+       {
+          "matches":    ["<all_urls>"],
+          "css":        ["content.css"],
+          "js":         ["jquery.js","content_script.js","popup.js"]
+       }
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "options_page": "options.html"
+}
