@@ -16,14 +16,15 @@
 
     "permissions": [
         "activeTab",
-	"contextMenus"
+	    "contextMenus",
+        "storage"
     ],
 
     "content_scripts": [
        {
           "matches":    ["<all_urls>"],
           "css":        ["content.css"],
-          "js":         ["jquery.js","content_script.js","popup.js"]
+          "js":         ["jquery.js","jquery_hotkeys.js","content_script.js","code.js"]
        }
     ],
 
