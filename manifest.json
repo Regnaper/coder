@@ -24,7 +24,7 @@
        {
           "matches":    ["<all_urls>"],
           "css":        ["content.css"],
-          "js":         ["jquery.js","jquery_hotkeys.js","content_script.js","code.js"]
+          "js":         ["jquery.js","jquery_hotkeys.js","content_script.js","code.js", "rangyinputs-jquery.js"]
        }
     ],
 

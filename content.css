@@ -23,3 +23,23 @@ h1 {
     border-color: #c8c8c8;
     border-radius: 5px 5px;
 }
+
+#cal1{
+    position:absolute;
+    height:0px;
+    width:0px;
+    top:100px;
+    left:100px;
+    overflow:none;
+    z-index:-100;
+}
+
+#cal2{
+    position:absolute;
+    height:0px;
+    width:0px;
+    top:0px;
+    left:0px;
+    overflow:none;
+    z-index:-100;
+}
