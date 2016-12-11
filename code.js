@@ -1,7 +1,17 @@
+function get_key(callback) {
+    chrome.storage.local.get('key', function(r){
+        callback(r.key);
+    });
+}
+
 function code(text, key, decode)
 {
     var code_text = "",
+        key,
         key_count = 0;
+    get_key(function(key){
+        key = key;
+    });
     if(key == null) {
         return 'empty_key';
     }
